@@ -12,4 +12,7 @@ node{
     sshagent(['tomcat-dev']) {
     // some block
 }
+   stage('Email Notification'){
+    mail bcc: '', body: 'hi welcome to jenkins', cc: 'johnraj.kommu1217@gmail.com', from: '', replyTo: '', subject: 'hello john', to: 'sunildesai246@gmail.com'
    }
+}
