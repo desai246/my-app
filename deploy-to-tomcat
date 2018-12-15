@@ -8,4 +8,8 @@ node{
       def mvnHome =  tool name: 'mavenlatest', type: 'maven'   
       sh "${mvnHome}/bin/mvn package"
    } 
+    stage('Compile-Package')
+    sshagent(['tomcat-dev']) {
+    // some block
+}
    }
